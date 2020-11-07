@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body" style="background-color: #D7DCDF">
+  <section class="modal-feedback">
+    <h2 class="feedback-title">Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-columns">
+        <div class="input-wrapper">
+          <label class="feedback-label" for="feedback-name">Ваше имя:</label>
+          <input class="input feedback-input-name" id="feedback-name" type="text" name="feedback-name"
+                 placeholder="Имя Фамилия">
+        </div>
+        <div class="input-wrapper">
+          <label class="feedback-label" for="feedback-email">Ваш email:</label>
+          <input class="input feedback-input-email" id="feedback-email" type="email" name="feedback-email"
+                 placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <label class="feedback-label" for="feedback-text">Текст письма:</label>
+        <textarea class="input feedback-textarea" id="feedback-text" name="feedback-text"
+                  placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="button feedback-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+  </section>
+</body>
+</html>
+

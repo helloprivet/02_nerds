@@ -1,12 +1,277 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page-body">
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="logo-link">
+          <img class="logo-img" src="img/nerds-logo.svg" width="160" height="66" alt="Логотип магазина Nerds">
+        </a>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="#">Студия</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Клиенты</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="cart-link-wrapper">
+          <a class="cart-link" href="#">Корзина</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Магазин студии Nerds</h1>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <!--
+      Небольшое пояснение - текст на втором и третьем слайде не попадает под макет, тк на самом макете отступы от
+      заголовка до текста на первом слайде одни, а на втором и третьем другие. Вероятно неточность дизайнера, не подгонять
+      же каждый слайд.
+    -->
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Как мы работаем</h2>
+        <ul class="slider-list">
+          <li class="slider-item first-slide current-slide">
+            <h3 class="slider-title">Долго, дорого, <br> скрупулезно.</h3>
+            <p class="slider-desc">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="button slider-button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item second-slide">
+            <h3 class="slider-title">Любим математику <br> как никто другой</h3>
+            <p class="slider-desc">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button slider-button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item third-slide">
+            <h3 class="slider-title">Только ночь, <br> только хардкор</h3>
+            <p class="slider-desc">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+              начинается.</p>
+            <a class="button slider-button" href="#">Узнать больше</a>
+          </li>
+        </ul>
+        <ul class="slider-controls">
+          <li class="controls-item">
+            <button class="controls-button current-button" type="button" aria-label="Первый слайд"
+                    data-name="first-slide"></button>
+          </li>
+          <li class="controls-item">
+            <button class="controls-button" type="button" aria-label="Второй слайд"
+                    data-name="second-slide"></button>
+          </li>
+          <li class="controls-item">
+            <button class="controls-button" type="button" aria-label="Третий слайд"
+                    data-name="third-slide"></button>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  </body>
+    <section class="services">
+      <div class="container">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <img class="services-img" src="img/services1.jpg" width="300" height="146"
+                 alt="Мы создаем веб-сайты">
+            <h3 class="services-title">Веб-сайты</h3>
+            <p class="services-desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button services-button button-red" href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img class="services-img" src="img/services2.jpg" width="300" height="146"
+                 alt="Мы создаем мобильные приложения">
+            <h3 class="services-title">Приложения</h3>
+            <p class="services-desc">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button services-button button-green" href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img class="services-img" src="img/services3.jpg" width="300" height="146"
+                 alt="Мы создаем презентации">
+            <h3 class="services-title">Презентации</h3>
+            <p class="services-desc">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button services-button button-yellow" href="#">Заказать</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <h2 class="visually-hidden">О нас</h2>
+        <div class="left-column">
+          <p class="about-us-text">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="about-us-desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+            креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="about-us-title">Выполняем заказы на разработку:</h3>
+          <ul class="about-us-list">
+            <li class="about-us-item">Веб-сайтов любой сложности</li>
+            <li class="about-us-item">Мобильных приложений для iOS и Android</li>
+            <li class="about-us-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <img class="nerds-illustration" src="img/nerds-illustration.jpg" width="360" height="208"
+               alt="Логотип-иллюстрация Nerds">
+          <p class="au-table-title">с 2004 года Любим точность во всем:</p>
+          <dl class="au-table-list">
+            <div class="table-wrapper">
+              <dt>146<span class="percent">%</span></dt>
+              <dd>Уровень<br> самоотдачи</dd>
+            </div>
+            <div class="table-wrapper">
+              <dt>100<span class="percent">%</span></dt>
+              <dd>Соблюдение<br> сроков</dd>
+            </div>
+            <div class="table-wrapper">
+              <dt>50<span class="percent">%</span></dt>
+              <dd>Минимальная<br> предоплата</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      Небольшое пояснение - я всю голову сломал, но так и не придумал, как сделать разделитель между логотипами,
+       что-бы он грамотно и равномерно разделялся между ними. Да, можно было сделать как бордер, можно было задать
+       width каждому элементу и сделать на псевдоэлементе, но при переполнении или наоборот, когда логотипов три или
+       меньше, разделители всегда скачут как попало. Самый оптимальный вариант, как показалось мне, просто добавить
+       еще один элемент списка в виде самого разделителя, что бы он оптимально и равномерно распределялся между
+       логотипами с помощью space-between. Надеюсь не попаду под критерий Д2.
+       И еще один момент - логотипы не будут попадать под макет, тк на макете отступы от разделителя до каждого
+       логотипа разные. Ну не подгонять же каждый лого.
+    -->
+    <section class="clients">
+      <div class="container">
+        <h2 class="visually-hidden">Наши клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-item">
+            <a class="clients-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img class="clients-img" src="img/logo-html-academy.png" width="199" height="68"
+                   alt="Логотип HTML Academy">
+            </a>
+          </li>
+          <li class="delimiter">
+            <span class="visually-hidden">Разделитель</span>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="#">
+              <img class="clients-img" src="img/logo-borodinski.png" width="209" height="90"
+                   alt="Логотип Borodinski">
+            </a>
+          </li>
+          <li class="delimiter">
+            <span class="visually-hidden">Разделитель</span>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="#">
+              <img class="clients-img" src="img/logo-pink.png" width="185" height="52"
+                   alt="Логотип Pink">
+            </a>
+          </li>
+          <li class="delimiter">
+            <span class="visually-hidden">Разделитель</span>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="#">
+              <img class="clients-img" src="img/logo-mishka.png" width="173" height="84"
+                   alt="Логотип Mishka">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="contacts-wrapper">
+      <iframe class="contats-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604611907133!5m2!1sru!2sru"
+              allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+      <div class="container">
+        <section class="contacts">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <h3 class="contacts-title">Nerds design studio</h3>
+          <address class="contacts-address">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</address>
+          <p class="contacts-text">тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="button contacts-button" href="#">Напишите нам</a>
+        </section>
+      </div>
+    </div>
+    <div class="container">
+      <section class="footer-socials">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="social-link" href="#">
+              <img src="img/vk-icon.svg" width="27" height="15" alt="Мы ВКонтакте">
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="social-link" href="#">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="social-link" href="#">
+              <img src="img/insta-icon.svg" width="21" height="21" alt="Мы в Инстаграме">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer-text">
+        <p class="text-top">Давайте дружить, это выгодно!</p>
+        <p class="text-bottom">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <section class="modal-feedback">
+    <h2 class="feedback-title">Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-columns">
+        <div class="input-wrapper">
+          <label class="feedback-label" for="feedback-name">Ваше имя:</label>
+          <input class="input feedback-input-name" id="feedback-name" type="text" name="feedback-name"
+                 placeholder="Имя Фамилия">
+        </div>
+        <div class="input-wrapper">
+          <label class="feedback-label" for="feedback-email">Ваш email:</label>
+          <input class="input feedback-input-email" id="feedback-email" type="email" name="feedback-email"
+                 placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <label class="feedback-label" for="feedback-text">Текст письма:</label>
+        <textarea class="input feedback-textarea" id="feedback-text" name="feedback-text"
+                  placeholder="В свободной форме"></textarea>
+      </div>
+      <!--
+        Поле, показывающее состояние при неверно введенном тексте.
+        Убрать .hide
+      -->
+      <div class="input-wrapper hide">
+        <label class="feedback-label" for="feedback-text-warning">Текст письма:</label>
+        <textarea class="input feedback-textarea input-warning" id="feedback-text-warning" name="feedback-text"
+                  placeholder="В свободной форме">Неправильный текст</textarea>
+      </div>
+      <button class="button feedback-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+  </section>
+  <script src="js/script.min.js"></script>
+</body>
 </html>
